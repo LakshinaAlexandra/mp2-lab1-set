@@ -312,7 +312,7 @@ TEST(TBitField, or_operator_applied_to_bitfields_of_non_equal_size_min_on_right_
 
 TEST(TBitField, and_operator_applied_to_bitfields_of_non_equal_size_min_on_left_for_big_bitfields)
 {
-  const int size1 = 40, size2 = 63;
+  const int size1 = 40, size2 = 70;
   TBitField bf1(size1), bf2(size2), expBf(size2);
   // bf1
   bf1.SetBit(1);
@@ -322,7 +322,7 @@ TEST(TBitField, and_operator_applied_to_bitfields_of_non_equal_size_min_on_left_
   bf2.SetBit(1);
   bf2.SetBit(18);
   bf2.SetBit(29);
-  bf2.SetBit(62);
+  bf2.SetBit(69);
   // expBf 
   expBf.SetBit(1);
   expBf.SetBit(29);
@@ -332,7 +332,7 @@ TEST(TBitField, and_operator_applied_to_bitfields_of_non_equal_size_min_on_left_
 
 TEST(TBitField, and_operator_applied_to_bitfields_of_non_equal_size_min_on_right_for_big_bitfields)
 {
-  const int size1 = 40, size2 = 63;
+  const int size1 = 40, size2 = 70;
   TBitField bf1(size1), bf2(size2), expBf(size2);
   // bf1
   bf1.SetBit(1);
@@ -342,7 +342,7 @@ TEST(TBitField, and_operator_applied_to_bitfields_of_non_equal_size_min_on_right
   bf2.SetBit(1);
   bf2.SetBit(18);
   bf2.SetBit(29);
-  bf2.SetBit(62);
+  bf2.SetBit(69);
   // expBf 
   expBf.SetBit(1);
   expBf.SetBit(29);
